@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> LOG IN</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="game, space, html, css, javascript">
+    <meta name="author" content="Davide Monteleone, Riccardo Battista, Gianluca Mastrolorito">
+    <meta name="description" content="Log in a pagine esterne">
+    <link rel="icon" type="image/x-icon" href="IMMAGINI/INDEX/favicon.png">
+
+    <!-- collegamenti a pagine esterne-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="index_css.css">
+    <script type="text/javascript" src="index_javascript.js"></script>
+
+    <style>
+        .lineaVerde {
+            background: linear-gradient(to bottom, darkGreen, rgb(179, 238, 179));
+            width: 5.5px;
+            height: 300px;
+            position: relative;
+            top: 50px;
+            left: 150px;
+        }
+
+        .lineaArancione {
+            background: linear-gradient(to bottom, orange, rgb(253, 174, 174));
+            width: 5.5px;
+            height: 600px;
+            position: relative;
+            top: -1050px;
+            left: 150px;
+        }
+
+        p.paragrafoFeatures {
+            font-size: 35px;
+        }
+
+        div#codice ul {
+            border: 2px solid red;
+            width: 250px;
+        }
+
+        div#codice ul li {
+            position: relative;
+            left: -40px;
+            display: inline-block;
+            border: none;
+            padding: 10px;
+        }
+
+        div#codice div {
+            position: relative;
+            top: -20px;
+        }
+
+        div#menu-prompt img {
+            width: 85%;
+            margin: auto;
+        }
+
+        div#mainContainer {
+            position: relative;
+            top: -1500px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section id="titleBG">
+        <img src="assets/bg.jpg" id="bg">
+        <img src="assets/astronaut.png" id="astronaut">
+        <img src="assets/planet.png" id="planet">
+        <img src="assets/landscape.png" id="landscape">
+        <img src="assets/sun.png" id="sun">
+        <div id="title">DR(U)G Web Project</div>
+    </section>
+
+    <section id="content">
+        <div id="mainContainerInformation">
+
+            <div class="lineaVerde"> </div>
+            <img src="IMMAGINI/INDEX/sticker_features.png" id="imgFeatures" draggable="false">
+            <div class="lineaVerde"
+                style="top: 75px; height: 1000px; background: linear-gradient(to bottom, rgb(179, 238, 179), orange)">
+            </div>
+
+            <div id="contentFeature" class="reveal">
+                <h2> CARATTERISTICHE</h2>
+
+                <p class="paragrafoFeatures">
+                    <span class="verdeChiaro"> Il gioco di innovazione nel mondo del gaming. </span> <br>
+                    Lo space shooter creato da noi ha raccolto feedback positivi per quanto riguarda gli effetti
+                    innovativi. <br> <br>
+                    Sviluppato dalla DR(U)G corporation, azienda sviluppatrice di software e game online, il gioco ha come scopo
+                    quello di far riaccendere la passione per gli spara-tutto spaziali e dimostrare che i vecchi giochi, se ridefiniti,
+                    possono tornare tra le nostre console.
+                </p>
+
+                <div id="imgContainer1">
+                    <img src="IMMAGINI/INDEX/spaceShooterScreen.png" id="spaceShooterScreen" class="codeImages reveal" draggable="false">
+                    <img src="IMMAGINI/INDEX/codeIMG1.png" id="codeIMG1" class="codeImages reveal" draggable="false">
+                    <img src="IMMAGINI/INDEX/codeIMG2.png" id="codeIMG2" class="codeImages reveal" draggable="false">
+                </div>
+
+            </div>
+
+            <div class="lineaArancione"> </div>
+            <img src="IMMAGINI/INDEX/sticker_aboutWho.png" id="imgWhoPlays" draggable="false">
+            <div class="lineaArancione"
+                style="top: -1000px; height: 600px; background: linear-gradient(to top, orange, rgb(253, 174, 174));">
+            </div>
+
+            <div id="contentWhoPlays">
+                <h2 class="reveal"> SU COSA SI BASA</h2>
+
+                <p class="paragrafoFeatures reveal">
+                    <span class="orange"> L'intero gioco è basato sull'azione e nell'abilità nei giochi spara-tutto.
+                    </span> <br>
+                    Realizzato in HTML, CSS e Javascript e sviluppato dalla DR(U)G corporation, il gioco ha raccolto il
+                    <span style="color: orange; text-decoration: underline;">90.5%</span> di recensioni positive.
+                </p>
+
+                <div id="boxContentAboutWho" class="reveal">
+                    <p>
+                        Programmato con <span class="blue"> tanta cura e rivesione dell'originale</span>,<br>
+                        Questo space shooter risulta un gioco a basso contenuto di bug. <br>
+                        <br>La <span class="blue"> fluidità </span> è sempre al primo posto.
+                    </p>
+                </div>
+
+                <img src="IMMAGINI/INDEX/andamentoGioco.png" style="width: 750px; border-radius: 35px; position: relative; top: -190px; left: 19%" class="reveal">
+
+
+            </div>
+
+            <!-- prompt -->
+            <div id="mainContainer" class="reveal">
+                <div id="menu-prompt">
+                    <img src="IMMAGINI/INDEX/titolo_prompt.png" draggable="false">
+                </div>
+
+                <p style="margin-bottom: 50px; margin-top: 55px; text-align: center;">
+                    DR(U)G Company&#8482; [Versione 10.0.19044.1826] <br>
+                    (©) DR(U)G Corporation. Tutti i diritti sono riservati.
+                </p>
+
+                <div>
+                    &nbsp; C: \User:metatask\ Avvia un processo con una frase chiave:
+                    <input type="text" id="input-start" value="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script type="text/javascript">
+        var bg = document.getElementById("bg");
+        var astronaut = document.getElementById("astronaut");
+        var planet = document.getElementById("planet");
+        var landscape = document.getElementById("landscape");
+        var sun = document.getElementById("sun");
+        var title = document.getElementById("title");
+        positionLeftAtronaut = astronaut.offsetLeft;
+        positionLeftPlanet = planet.offsetLeft;
+        positionTopSun = sun.offsetTop;
+
+        positionTopAstronaut = astronaut.offsetTop;
+        var cont = 0;
+        var up = true;
+        var moovement = setInterval(function() {
+            positionTopAstronaut = astronaut.offsetTop;
+            cont++;
+            if(cont==25) {
+                up = !up;
+                cont = 0;
+            }
+            if(up) {
+                astronaut.style.top = positionTopAstronaut + 0.6 + 'px';
+                //console.log(astronaut.style.top);
+            }
+            else {
+                astronaut.style.top = positionTopAstronaut - 0.6 + 'px';
+                //console.log(astronaut.style.top);
+            }
+        }, 150);
+        
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.6 + 'px';
+            astronaut.style.left = (positionLeftAtronaut + value) + 'px';
+            planet.style.left = (positionLeftPlanet - value) + 'px';
+            sun.style.top = (positionTopSun - value) + 'px';
+            title.style.opacity = 1 - (value*0.004);
+            //console.log(window.scrollY);
+        });
+
+        function reveal() {
+            var reveals = document.getElementsByClassName("reveal");
+
+            for (var i=0; i<reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+</body>
+
+</html>

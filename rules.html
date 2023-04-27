@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <title> REGOLE DEL GIOCO </title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="rules">  
+        <meta name="author" content="Davide Monteleone, Riccardo Battista">  
+        <meta name="description" content="Come giocare a space shooter">
+        
+        <!-- collegamenti a pagine esterne -->
+        <!-- collegamenti a pagine esterne-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <link rel="stylesheet" type="text/css" href="rules_css.css"> 
+        <script type="text/javascript" src="rules_javascript.js"></script>
+
+        <style>
+            #img1{
+                width: 68px;
+                display: flex;
+                margin: auto;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="mainContainer">
+            <button id="chiusuraRegole"> X </button>
+            
+            <div style="position: absolute; top: 22%; width: 600px;"> <!-- quando clicco il bottone i paragrafi non vanno sotto-->
+                <h1> Scova tutte le regole <br> presenti all'interno di <br> Space shooter</h1>
+                <h4> Scopri in maniera rapida come si gioca </h4>
+                
+                <button id="showRule"> scopri le regole... </button>
+                <div class="card" style="top: 50px; left: 50px">
+                    <img src="IMMAGINI/RULES/navicellaMovement.gif" id="img1" draggable="false">
+                    <p>
+                        Le navicelle si muovono a destra (tasto D) e a sinistra (tasto A). 
+                        Per sparare premi W.
+                    </p>
+                </div>
+
+                <div class="card" style="top: -205px; left: 350px;">
+                    <img src="IMMAGINI/RULES/navicellaMovement.gif" id="img1" draggable="false">
+                    <p>
+                        Se ti farai colpire dai proiettili nemici la tua barra della vita diminuirà. Una volta che la vita sarà
+                        terminata, il gioco terminerà
+                    </p>
+                </div>
+            </div>
+
+        </div>        
+
+        <div id="backToHomePage">
+            <a href="index.html"> <button> torna alla Home Page &rarr;  </button> </a>
+        </div>
+
+    </body>
+
+</html>

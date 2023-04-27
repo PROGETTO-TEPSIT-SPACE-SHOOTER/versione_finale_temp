@@ -1,0 +1,64 @@
+body{
+    background-image: url("IMMAGINI/GAME/background.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas{
+    position: absolute;
+    top: 51.5%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #341218;
+}
+
+img.imgLife{
+    width: 50px;
+    margin-left: -15px;
+}
+
+img.imgAmmo{
+    width: 30px;
+    margin: -10px;
+}
+
+div#life{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 79.5%;
+    left: 35%;
+    z-index: 2;
+}
+
+div#life h2{
+    float: left;
+    color: white;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+div#munizioni h2{
+    float: left;
+    color: white;
+    margin-right: 10px;
+    font-style: italic;
+    position: relative;
+    top: -18px;
+}
+
+div#life img{
+    position: relative;
+    top: 24.5px;
+}
+
+div#munizioni{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 81.25%;
+    left: 51.5%;
+    z-index: -2;
+}

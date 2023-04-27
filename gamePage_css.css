@@ -1,0 +1,77 @@
+body{
+    background-image: url("IMMAGINI/GAME/animateBackground.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img#titoloSelezione{
+    width: 60%; 
+    margin-top: 5%;
+    margin-left: 22%;
+}
+
+div#mainContainer{
+    width: max-content;
+    height: max-content;
+    margin-top: 100px;
+}
+
+div#mainContainer ul li{
+    display: inline-flex;
+}
+
+@media screen and (max-width: 1300px) {
+    div#mainContainer{
+        width: max-content;
+        height: max-content;
+    }
+
+    div#mainContainer ul li{
+        display: block;
+    }
+}
+
+div.card{
+    width: 250px;
+    height: 400px;
+    border: 2px solid #5485ad;
+    border-radius: 10px;
+    margin: 5px;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+div.card h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 67%;
+}
+
+.animation{
+    position: absolute;
+    top: 240px;
+    left: 14%;
+    width: 20px; 
+    z-index: 100;
+}
+
+.opaco{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
