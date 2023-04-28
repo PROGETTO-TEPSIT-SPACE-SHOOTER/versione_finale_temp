@@ -1,0 +1,109 @@
+body{
+    background-image: url("IMMAGINI/RULES/sfondo.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div#mainContainer{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: white;
+    border: 2px solid rgb(92, 172, 209);
+    border-radius: 9px;
+}
+
+div#mainContainer h1{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+div#mainContainer h4{
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.card{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border-radius: 15px;
+    background-image: url("IMMAGINI/RULES/sfondoCard.jpg");
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid rgb(92, 172, 209);
+    text-align: center;
+}
+
+div.card p{
+    padding: 5px 10px;
+}
+
+button#showRule{
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 225px;
+    background-color: transparent;
+    color: black;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+button#showRule:hover{
+    background-color: rgb(0, 178, 223);
+    color: white;
+    transition: 0.5s;
+}
+
+button#chiusuraRegole{
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 95%;
+}
+
+button#chiusuraRegole:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+}
+
+div#backToHomePage{
+    opacity: 0;
+    width: 320px;
+    margin: auto;
+    margin-top: 25%;
+}
+
+div#backToHomePage button{
+    width: 320px;
+    padding: 15px;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(0, 178, 223);
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+div#backToHomePage button a:link{
+    color: white;
+    text-decoration: none;
+}
+
+div#backToHomePage button a:visited{
+    color: white;
+    text-decoration: none;
+}
